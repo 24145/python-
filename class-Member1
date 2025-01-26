@@ -1,0 +1,15 @@
+class Member:
+    pass
+
+yamada = Member()
+yamada.no = 15
+yamada.name = 'Amy'
+yamada.weight = '75'
+
+sekine = Member()
+sekine.no = 37
+sekine.name = 'Ken'
+sekine.weight = 64
+
+print('{}: {} {}kg'.format(yamada.no, yamada.name, yamada.weight))
+print('{}: {} {}kg'.format(sekine.no, sekine.name, sekine.weight))
