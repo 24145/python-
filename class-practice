@@ -1,0 +1,39 @@
+class MyClass:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def greet(self):
+        print(f"Hello my name is {self.name} and I am {self.age} years old.")
+
+# create object
+person = MyClass("Alice", 25)
+print(person.name)
+print(person.age)
+person.greet()
+
+# add methods
+from math import pi
+class Circle:
+    def __init__(self, r):
+        self.r = r
+    def area(self):
+        self.area = pi * self.r ** 2
+        return self.area
+    def circumference(self):
+        self.circumference = pi * 2 * self.r
+        return self.circumference
+r = Circle(3)
+print(r.area())
+print(r.circumference())
+
+#class attributes vs. instance attributes
+class Car:
+    wheels = 4 # class attribute: shared
+    def __init__(self, colour):
+        self.colour = colour # instance attribute: unique
+
+car1 = Car('blue')
+print(car1.colour)
+car2 = Car('green')
+print(car2.colour)
+print(car1.wheels)
