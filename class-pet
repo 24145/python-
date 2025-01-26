@@ -1,0 +1,18 @@
+class Pet:
+    def __init__(self, name: str, master: str):
+        self.name = name
+        self.master = master
+
+    def introduction(self):
+        print("my name is {}".format(self.name))
+        print("my master is {}".format(self.master))
+
+    def __str__(self):
+        return self.name + '<<' + self.master + '>>'
+    def print(self):
+        print(Pet.__str__(self))
+
+kurt = Pet('Kurt', 'Amy')
+print(kurt)
+print('str(Kurt) = ' + str(kurt))
+kurt.print()
